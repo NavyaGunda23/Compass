@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+.App{
+    background-color: #E9EEF2;
+    height: 100vh;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.right-content{
+    padding: 20px 40px;
+    margin-left: 60px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.graph-parent{
+    display: flex;
+    justify-content: center;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.graph-parent div.graph-section{
+    width: 50%;
+    background: white;
+    border-radius: 4px;
+    margin: 20px 20px 20px 0px;
+    padding: 20px 20px 20px 40px;
+    /* width: 560px; */
+    /* height: 460px; */
+    position: relative;
+    display: inline-table;
 }
-
-.App-link {
-  color: #61dafb;
+div.graph-section:first-child{
+    margin-right: 50px !important;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+div.graph-section h4{
+    margin-top: 0px ;
+}
+.y_axis_label{
+    position: absolute;
+    top: 43%;
+    transform: rotate(
+-90deg);
+    justify-content: center;
+    left: -15px;
+}
+.x_axis_label{
+    width: 530px;
+    text-align: center;
+    margin: 0px !important;
+}
+.recharts-layer text {
+    font-size: 12px;
+}
+.reactnagle{
+    width: 16px;
+    height: 16px;
+    background: red;
+    display: block;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+.graphs-data{
+    display: flex;
+    align-items: center;
+}
+.clear{
+    clear: both;
 }
